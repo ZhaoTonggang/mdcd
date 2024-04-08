@@ -45,7 +45,7 @@ if (window.top != window) {
 		//BIOS
 		window.biosUrl = '../bios/' + gameInfo.b + '.7z';
 		// ROM
-		window.gameUrl = "https://storage.heheda.cn/mdcd-rom/" + gameInfo.i + ".7z";
+		window.gameUrl = (gameInfo.s ? "../roms/" : "https://storage.heheda.cn/mdcd-rom/") + gameInfo.i + ".7z";
 		// 初始化
 		window.EJS_player = "#show_box";
 		window.dataPath = "https://other.heheda.top/gamelib/";
