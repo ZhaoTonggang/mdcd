@@ -45,7 +45,7 @@ if (window.top != window) {
 		//BIOS
 		window.biosUrl = '../bios/' + gameInfo.b + '.7z';
 		// ROM
-		window.gameUrl = (gameInfo.s ? "../roms/" : "https://storage.heheda.cn/mdcd-rom/") + gameInfo.i + ".7z";
+		window.gameUrl = "https://storage.heheda.cn/mdcd-rom/" + gameInfo.i + ".7z";
 		// 初始化
 		window.EJS_player = "#show_box";
 		window.dataPath = "https://other.heheda.top/gamelib/";
@@ -640,7 +640,7 @@ const dowrom = () => {
 	const dorom = confirm('您要下载此游戏的ROM文件吗？');
 	if (dorom == true) {
 		cocoMessage.warning("即将开始下载！", 2000);
-		window.open('../roms/' + gameInfo.i + '.7z');
+		window.open('https://storage.heheda.cn/mdcd-rom/' + gameInfo.i + '.7z');
 	} else {
 		cocoMessage.warning("您取消了下载！", 2000);
 	}
